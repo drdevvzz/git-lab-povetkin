@@ -1,0 +1,4 @@
+touch utils.py config.ini
+echo "smthin" >> utils.py config.ini
+git add utils.py config.ini 
+git commit -m "feat: создан коммит, изменяющий 2 файла"
