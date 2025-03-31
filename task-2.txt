@@ -1,0 +1,12 @@
+git rebase -i HEAD~2
+#меняем pick на e (edit)
+echo "123" >> utils.py 
+echo "456" >> config.ini
+git add utils.py 
+git commit -m "feat: добавил 123 в utils.py"
+git add config.ini
+git commit -m "feat: добавил 123 в config.ini"
+git rebase --continue 
+git add .
+git rebase --continue
+git commit -m "Merge branch 'main'"
